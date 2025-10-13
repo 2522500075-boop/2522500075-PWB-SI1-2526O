@@ -1,2 +1,8 @@
 ﻿## pertemuan-03
-Deskripsi pertemuan...
+NIM : 2522500075
+NAMA : Khairaan Yamani
+
+Hari ini, senin 13 Oktober 2025, saya belajar:
+<ol>
+  <li>menggunakan file autolengkap.html pertemuan-02 untuk file index.html pertemuan-03</li>
+<ol>
