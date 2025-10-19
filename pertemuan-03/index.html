@@ -139,12 +139,18 @@ text-align: right;
 padding-right: 16px;
 flex-shrink: 0;
 }
-        #contact input:focus,
-        #contact textarea:focus {
-            border-color: #003366;
-            box-shadow: 0 0 4px rgba(0, 51, 102, 0.3);
-            outline: none;
-  }
+#contact input,
+#contact textarea {
+flex: 1;
+border: 1px solid #ccc;
+border-radius: 6px;
+padding: 8px;
+color: #000;
+font-weight: normal;
+margin: 0;
+box-sizing: border-box;
+}
+  
         #contact button {
             background-color: #003366;
             color: white;
