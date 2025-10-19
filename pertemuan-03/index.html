@@ -151,20 +151,28 @@ margin: 0;
 box-sizing: border-box;
 }
   
-        #contact button {
-            background-color: #003366;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            padding: 10px 20px;
-            margin-top: 15px;
-            font-size: 15px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-         #contact button:hover {
-            background-color: #002244; 
-        }
+#contact input,
+#contact textarea {
+flex: 1;
+border: 1px solid #ccc;
+border-radius: 6px;
+padding: 8px;
+color: #000;
+font-weight: normal;
+margin: 0;
+box-sizing: border-box;
+}
+#contact button {
+margin-top: 10px;
+display: inline-block;
+padding: 10px 24px;
+font-size: 16px;
+border-radius: 6px;
+cursor: pointer;
+border: none;
+transition: all 0.3s ease;
+margin-right: 8px;
+}
         #contact button[type="reset"] { 
             background-color: #ccc;
             color: #333;
