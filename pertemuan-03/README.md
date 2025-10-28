@@ -8,6 +8,7 @@ Hari ini, senin 13 Oktober 2025, saya belajar:
   <li>membuat struktur form untuk section contact</li>
   <li>section contact upgrade struktur form</li>
   <li>atur font dan warna latar body</li>
+  <li>tambahkan styling awal untuk halaman about dan contact</li>
   
 
 
