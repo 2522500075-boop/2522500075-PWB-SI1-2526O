@@ -14,6 +14,7 @@ Hari ini, senin 13 Oktober 2025, saya belajar:
   <li>tambahkan styling untuk fromm kontak</li>
   <li>tambahkan styling untuk tombol from kontak</li>
   <li>tambahkan styling untuk tombol submit di from kontak</li>
+  <li>tambahkan styling untuk tombol riset di from kontak</li>
   
 
 
