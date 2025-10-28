@@ -10,6 +10,7 @@ Hari ini, senin 13 Oktober 2025, saya belajar:
   <li>atur font dan warna latar body</li>
   <li>tambahkan styling awal untuk halaman about dan contact</li>
   <li>tambahkan styling untuk bagian about dan contact</li>
+  <li>perbaiki konsistensi padding dan border di halaman about</li>
   
 
 
