@@ -19,6 +19,7 @@ Hari ini, senin 13 Oktober 2025, saya belajar:
   <li>tambahkan stayling untuk footer dan efek hover tombol reset</li>
   <li>tambahkan stayling responsif untuk bagian about dan kontak</li>
   <li>tambahkan media query untuk tampilan responshif</li>
+  <li>tambahkan styling responsif untuk form kontak</li>
 
 
 
