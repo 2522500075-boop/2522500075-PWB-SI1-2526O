@@ -13,4 +13,5 @@ Hari ini, senin 13 Oktober 2025, saya belajar:
   <li>styling navigasi</li>
   <li>styling header mode mobile</li>
   <li>styling navigasi mode mobile</li>
+  <li>add styling for about and contact seactions</li>
 <ol>
