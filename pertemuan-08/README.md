@@ -25,4 +25,5 @@ hari ini Kamis 13 november 2025
     <li>menambahkan contact button<li>
     <li>mengganti hover submit<li>
     <li>mengganti bacground footer<li>
+    <li>menambahkan emoji tengkorak<li>
 <ol>
