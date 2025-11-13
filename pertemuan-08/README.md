@@ -10,4 +10,5 @@ hari ini Kamis 13 november 2025
     <li>stayling css pertemuan-07 ke pertemuan-08<li>
     <li>mengganti bacground body<li>
     <li>mengganti bacground header<li>
+    <li>menambahkan emoji api<lo>
 <ol>
