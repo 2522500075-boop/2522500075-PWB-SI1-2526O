@@ -52,7 +52,7 @@ $sesnamaadik = $_SESSION["txtnamaadik"] ?? "";
     <section id="about">
       <?php
           $nim = "2522500075;";
-          $Nama_Lengkap = "khairaan Yamani;";
+          $Nama_Lengkap = "Khairaan Yamani;";
           $Tempat_Lahir = "sungailiat;";
           $Tanggal_Lahir = "21-05-2006;";
           $hobi = "memancing paus";
@@ -104,7 +104,7 @@ $sesnamaadik = $_SESSION["txtnamaadik"] ?? "";
 
 
   <section id="contact">
-      <br><h2>mengubah di sini</h2></br>
+      <br><h2>Ubah di sini</h2></br>
       <form action="ulangan.php" method="POST">
 
         <label for="txtnim"><span>NIM:</span>
