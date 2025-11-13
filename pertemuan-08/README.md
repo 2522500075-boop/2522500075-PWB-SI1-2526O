@@ -20,4 +20,5 @@ hari ini Kamis 13 november 2025
     <li>mempertahankan layout sejajar<li>
     <li>mengubah about strong<li>
     <li>mengubah contact input<li>
+    <li>menambahkan script.js di pertemuan -08<li>
 <ol>
