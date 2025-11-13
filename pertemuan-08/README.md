@@ -23,4 +23,5 @@ hari ini Kamis 13 november 2025
     <li>menambahkan script.js di pertemuan -08<li>
     <li>menambahkan uts.php di pertemuan -08<li>
     <li>menambahkan contact button<li>
+    <li>mengganti hover submit<li>
 <ol>
