@@ -13,4 +13,5 @@ hari ini Kamis 13 november 2025
     <li>menambahkan emoji api<lo>
     <li>mengganti header hover<li>
     <li>mengganti header focus<li>
+    <li>mengganti header active<li>
 <ol>
