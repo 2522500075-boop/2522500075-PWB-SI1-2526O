@@ -26,4 +26,5 @@ hari ini Kamis 13 november 2025
     <li>mengganti hover submit<li>
     <li>mengganti bacground footer<li>
     <li>menambahkan emoji tengkorak<li>
+    <li>memperbarui biodata di index.php<li>
 <ol>
