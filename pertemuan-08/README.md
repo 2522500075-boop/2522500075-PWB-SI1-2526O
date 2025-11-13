@@ -3,28 +3,28 @@ hari ini Kamis 13 november 2025
 <br>Nim: 2522500075</br>
 <br>Nama: Khairaan Yamani</br>
 <ol>
-    <li>meng copy pertemuan-07 index.php ke pertemuan-08 index.php<li>
-    <li>memperbarui section about<li>
-    <li>menambahkan section contact<li>
-    <li>mengganti section footer<li>
-    <li>stayling css pertemuan-07 ke pertemuan-08<li>
-    <li>mengganti bacground body<li>
-    <li>mengganti bacground header<li>
-    <li>menambahkan emoji api<li>
-    <li>mengganti header hover<li>
-    <li>mengganti header focus<li>
-    <li>mengganti header active<li>
-    <li>mengganti bacground putih tulang saat aktif<li>
-    <li>mengganti bacgroun konten utama<li>
-    <li>mengganti judur berwarna coklat tua<li>
-    <li>mempertahankan layout sejajar<li>
-    <li>mengubah about strong<li>
-    <li>mengubah contact input<li>
-    <li>menambahkan script.js di pertemuan -08<li>
-    <li>menambahkan uts.php di pertemuan -08<li>
-    <li>menambahkan contact button<li>
-    <li>mengganti hover submit<li>
-    <li>mengganti bacground footer<li>
-    <li>menambahkan emoji tengkorak<li>
-    <li>memperbarui biodata di index.php<li>
+    <li>meng copy pertemuan-07 index.php ke pertemuan-08 index.php</li>
+    <li>memperbarui section about</li>
+    <li>menambahkan section contact</li>
+    <li>mengganti section footer</li>
+    <li>stayling css pertemuan-07 ke pertemuan-08</li>
+    <li>mengganti bacground body</li>
+    <li>mengganti bacground header</li>
+    <li>menambahkan emoji api</li>
+    <li>mengganti header hover</li>
+    <li>mengganti header focus</li>
+    <li>mengganti header active</li>
+    <li>mengganti bacground putih tulang saat aktif</li>
+    <li>mengganti bacgroun konten utama</li>
+    <li>mengganti judur berwarna coklat tua</li>
+    <li>mempertahankan layout sejajar</li>
+    <li>mengubah about strong</li>
+    <li>mengubah contact input</li>
+    <li>menambahkan script.js di pertemuan -08</li>
+    <li>menambahkan uts.php di pertemuan -08</li>
+    <li>menambahkan contact button</li>
+    <li>mengganti hover submit</li>
+    <li>mengganti bacground footer</li>
+    <li>menambahkan emoji tengkorak</li>
+    <li>memperbarui biodata di index.php</li>
 <ol>
