@@ -5,22 +5,22 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #FFF8E1; /* Background body diubah menjadi warna krim */
-  color: #4A3B2A; /* Warna teks body diubah menjadi coklat tua */
+  background: #FFF8E1; 
+  color: #4A3B2A;
   line-height: 1.5;
 }
 
 header {
-  background: #4A3B2A; /* Background header coklat tua */
+  background: #4A3B2A;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
 
-/* Menambahkan emoji api (🔥) berwarna oranye/merah pada H1 di dalam header */
+
 header h1::before {
   content: '🔥 ';
-  color: #FF5722; /* Warna api */
+  color: #FF5722; 
 }
 
 header ul {
@@ -38,28 +38,28 @@ header li a {
 }
 
 header li a:hover {
-  background-color: #8D6E63; /* Coklat sedang saat hover */
+  background-color: #8D6E63;
   border-radius: 6px;
   transition: background-color 0.3s ease;
 }
 
 header li a:focus {
-  outline: 2px solid #FFF8E1; /* Outline warna krim */
+  outline: 2px solid #FFF8E1;
   outline-offset: 2px;
   border-radius: 6px;
   background-color: rgba(255, 255, 255, 0.15);
 }
 
 header li a:active {
-  background-color: #A1887F; /* Coklat lebih muda saat active */
+  background-color: #A1887F;
   transform: translateY(1px);
 }
 
 #home:target~header nav a[href="#home"],
 #about:target~header nav a[href="#about"],
 #contact:target~header nav a[href="#contact"] {
-  background: #FFFDE7; /* Background putih tulang saat aktif */
-  color: #4A3B2A; /* Teks coklat tua */
+  background: #FFFDE7; 
+  color: #4A3B2A;
   font-weight: bold;
   border-radius: 6px;
   transition: all 0.3s ease;
@@ -68,21 +68,21 @@ header li a:active {
 #home,
 #about,
 #contact {
-  background-color: #FFFDE7; /* Background konten utama putih tulang */
+  background-color: #FFFDE7; 
   border-radius: 10px;
   padding: 20px;
   max-width: 700px;
   margin: 20px auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  /* Menambahkan garis/border tipis berwarna coklat */
-  border: 1px solid #8D6E63; /* Coklat sedang */
+  
+  border: 1px solid #8D6E63; 
 }
 
 #home h2,
 #about h2,
 #contact h2 {
-  color: #4A3B2A; /* Judul berwarna coklat tua */
-  border-bottom: 2px solid #8D6E63; /* Garis bawah berwarna coklat sedang */
+  color: #4A3B2A; 
+  border-bottom: 2px solid #8D6E63;
   padding-bottom: 6px;
   margin-top: 0;
   margin-bottom: 16px;
@@ -94,18 +94,18 @@ header li a:active {
 
 #about p,
 #contact label {
-  display: flex; /* Mempertahankan layout sejajar/tabel */
+  display: flex; 
   justify-content: flex-start;
   align-items: baseline;
   margin: 0;
   padding: 6px 0;
-  border-bottom: 1px solid #dcdcdc; /* Garis pemisah abu-abu netral */
+  border-bottom: 1px solid #dcdcdc;
 }
 
 #about strong,
 #contact label>span {
   min-width: 180px;
-  color: #4A3B2A; /* Label berwarna coklat tua */
+  color: #4A3B2A; 
   font-weight: 600;
   text-align: right;
   padding-right: 16px;
@@ -115,7 +115,7 @@ header li a:active {
 #contact input,
 #contact textarea {
   flex: 1;
-  border: 1px solid #8D6E63; /* Border input coklat sedang */
+  border: 1px solid #8D6E63;
   border-radius: 6px;
   padding: 8px;
   color: #000;
@@ -137,7 +137,7 @@ header li a:active {
 }
 
 #contact button[type="submit"] {
-  background-color: #4A3B2A; /* Tombol submit coklat tua */
+  background-color: #4A3B2A; 
   color: #fff;
   font-weight: 600;
 }
@@ -149,7 +149,7 @@ header li a:active {
 }
 
 #contact button[type="submit"]:hover {
-  background-color: #8D6E63; /* Hover submit jadi coklat sedang */
+  background-color: #8D6E63;
   transform: translateY(-1px);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
@@ -160,16 +160,16 @@ header li a:active {
 }
 
 footer {
-  background: #4A3B2A; /* Background footer coklat tua */
+  background: #4A3B2A;
   color: #aaa;
   text-align: center;
   padding: 10px;
 }
 
-/* Menambahkan emoji tengkorak (💀) di footer */
+
 footer::after {
     content: ' 💀';
-    color: #FFF8E1; /* Warna krim untuk emoji */
+    color: #FFF8E1; 
 }
 
 
