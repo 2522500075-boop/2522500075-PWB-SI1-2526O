@@ -6,4 +6,5 @@ hari ini Kamis 13 november 2025
     <li>meng copy pertemuan-07 index.php ke pertemuan-08 index.php<li>
     <li>memperbarui section about<li>
     <li>menambahkan section contact<li>
+    <li>mengganti section footer<li>
 <ol>
