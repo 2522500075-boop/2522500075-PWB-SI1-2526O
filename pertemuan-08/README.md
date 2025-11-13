@@ -24,4 +24,5 @@ hari ini Kamis 13 november 2025
     <li>menambahkan uts.php di pertemuan -08<li>
     <li>menambahkan contact button<li>
     <li>mengganti hover submit<li>
+    <li>mengganti bacground footer<li>
 <ol>
