@@ -12,4 +12,5 @@ hari ini Kamis 13 november 2025
     <li>mengganti bacground header<li>
     <li>menambahkan emoji api<lo>
     <li>mengganti header hover<li>
+    <li>mengganti header focus<li>
 <ol>
