@@ -44,7 +44,7 @@ $sesnamaadik = $_SESSION["txtnamaadik"] ?? "";
       <h2>Selamat Datang</h2>
       <?php
       echo "halo dunia!<br>";
-      echo "nama saya hadi";
+      echo "nama saya evos iyan";
       ?>
       <p>Ini contoh paragraf HTML.</p>
     </section>
