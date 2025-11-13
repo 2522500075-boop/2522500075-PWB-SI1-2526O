@@ -14,4 +14,5 @@ hari ini Kamis 13 november 2025
     <li>mengganti header hover<li>
     <li>mengganti header focus<li>
     <li>mengganti header active<li>
+    <li>mengganti bacground putih tulang saat aktif<li>
 <ol>
