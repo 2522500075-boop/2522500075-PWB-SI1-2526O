@@ -8,4 +8,5 @@ hari ini Kamis 13 november 2025
     <li>menambahkan section contact<li>
     <li>mengganti section footer<li>
     <li>stayling css pertemuan-07 ke pertemuan-08<li>
+    <li>mengganti bacground body<li>
 <ol>
