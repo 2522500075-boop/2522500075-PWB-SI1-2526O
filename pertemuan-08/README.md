@@ -18,4 +18,5 @@ hari ini Kamis 13 november 2025
     <li>mengganti bacgroun konten utama<li>
     <li>mengganti judur berwarna coklat tua<li>
     <li>mempertahankan layout sejajar<li>
+    <li>mengubah about strong<li>
 <ol>
