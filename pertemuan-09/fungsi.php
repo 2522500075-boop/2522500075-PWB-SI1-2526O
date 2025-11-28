@@ -1,17 +1,16 @@
-<?php  
+<?php
 function bersihkan($str)
 {
-    return htmlspecialchars(trim($str));
+return htmlspecialchars(trim($str));
+}
+function tidakKosong($str)
+{
+return strlen(trim($str)) > 0;
 }
 
-function tidakkosong(str)
+function formatTanggal($tgl)
 {
-    return starlen(trim($strm)) > 0;
-}
-
-function formattanggal($tgl)
-{
-    return date("d M Y", strtotime($tgl));
+return date("d M Y", strtotime($tgl));
 }
 
 function tampilkanBiodata($conf, $arr)
