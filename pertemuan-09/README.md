@@ -20,6 +20,6 @@
   <li>menambahkan formatTanggal di fungsi.php</li>
   <li>menambahkan function tampilkanbiodata di fungsi.php<li>
   <li>menghapus php foreach di index.php<li>
-  <li>menambahkan kode di awal baris file index.php</li>
+  <li>menambahkan require once ke fungsi php</li>
 
 </ol>
