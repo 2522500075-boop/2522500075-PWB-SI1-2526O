@@ -14,4 +14,5 @@
   <li>memodif baris kode 10-19 menjadi bentuk array associativec</li>
   <li>menghapus baris 23 dan 32 dan menambahkan session biodata</li>
   <li>mengubah baris kode 19-67 dan menggantinya menjadi suffix</li>
+  <li>menambahkan html specialchars</li>
 </ol>
