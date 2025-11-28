@@ -122,7 +122,8 @@ endif;
 
     <section id="about">
       <h2>Tentang Saya</h2>
-      </section>
+      <?= tampilkanBiodata($fieldConfig, $biodata) ?>
+    </section>
 
     <section id="contact">
       <h2>Kontak Kami</h2>
