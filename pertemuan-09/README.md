@@ -12,4 +12,5 @@
   <li>echo session ke nilai label section contact</li>
   <li>echo session ke nilai label section contact selesai</li>
   <li>memodif baris kode 10-19 menjadi bentuk array associativec</li>
+  <li>menghapus baris 23 dan 32 dan menambahkan session biodata</li>
 </ol>
