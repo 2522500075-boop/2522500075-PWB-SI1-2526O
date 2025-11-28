@@ -15,4 +15,5 @@
   <li>menghapus baris 23 dan 32 dan menambahkan session biodata</li>
   <li>mengubah baris kode 19-67 dan menggantinya menjadi suffix</li>
   <li>menambahkan html specialchars</li>
+  <li>menghapus baris kode 130-140</li>
 </ol>
