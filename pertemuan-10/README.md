@@ -4,3 +4,4 @@ hari ini jumat 5 desember 2025
 <br>Nama: Khairaan Yamani</br>
 <ol>
     <li>menambahkan koneksi php dipertemuan10serta menambahkan code</li>
+    <li>manambahkan database name di phpMyAdmin dengan nama db_pwd2025</li>
