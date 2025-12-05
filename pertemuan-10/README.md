@@ -7,3 +7,4 @@ hari ini jumat 5 desember 2025
     <li>manambahkan database name di phpMyAdmin dengan nama db_pwd2025</li>
     <li>menambahkan kode di phpMyAdmin di SQL</li>
     <li>menambahkan file read.php dan menambahkan code</li>
+    <li>memodif code read.php di file read_inc.php</li>
