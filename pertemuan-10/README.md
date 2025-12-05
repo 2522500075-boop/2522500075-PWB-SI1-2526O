@@ -10,3 +10,4 @@ hari ini jumat 5 desember 2025
     <li>memodif code read.php di file read_inc.php</li>
     <li>mengganti code di bagian 146 di index.php</li>
     <li>menghapus code dari baris 133 - 141 di index.php</li>
+    <li>menambahkan localhost ke pertemuan -10</li>
