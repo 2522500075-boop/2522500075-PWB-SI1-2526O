@@ -6,3 +6,4 @@ hari ini jumat 5 desember 2025
     <li>menambahkan koneksi php dipertemuan10serta menambahkan code</li>
     <li>manambahkan database name di phpMyAdmin dengan nama db_pwd2025</li>
     <li>menambahkan kode di phpMyAdmin di SQL</li>
+    <li>menambahkan file read.php dan menambahkan code</li>
