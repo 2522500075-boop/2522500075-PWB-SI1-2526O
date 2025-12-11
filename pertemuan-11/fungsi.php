@@ -1,9 +1,9 @@
 <?php
-function redirect_ke($url)
+function bersihkan($str)
 {
-  header("location: " . $url);
-  exit();
+  return htmlspecialchars(trim($str));
 }
+
 function tidakKosong($str)
 {
   return strlen(trim($str)) > 0;
