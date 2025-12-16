@@ -115,7 +115,7 @@ require_once __DIR__ . '/fungsi.php';
    $old          = $_SESSION['old'] ?? '';
 
    unset($_SESSION['flash_sukses'], $_SESSION['flash_error'], $_SESSION['old']);
-   ?>
+   ?>
 
     <section id="contact">
       <h2>Kontak Kami</h2>
@@ -169,5 +169,4 @@ require_once __DIR__ . '/fungsi.php';
 
   <script src="script.js"></script>
 </body>
-
 </html>
