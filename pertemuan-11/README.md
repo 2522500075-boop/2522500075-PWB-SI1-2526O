@@ -18,3 +18,4 @@ hari ini jumat 5 desember 2025
     <li>menambahkan cek request method</li>
     <li>mengganti data $ post trim</li>
     <li>menambahkan validasi</li>
+    <li>memperbarui statemen pesan sukses atau gagal</li>
