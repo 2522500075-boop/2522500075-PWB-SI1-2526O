@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once __DIR__ . '/fungsi.php';
+require_once _DIR_ . '/fungsi.php';
 ?>
 
 <!DOCTYPE html>
@@ -109,7 +109,7 @@ require_once __DIR__ . '/fungsi.php';
       <?= tampilkanBiodata($fieldConfig, $biodata) ?>
     </section>
 
-    <?php 
+   <?php 
    $flash_sukses = $_SESSION['flash_sukses'] ?? '';
    $flash_error  = $_SESSION['flash_error'] ?? '';
    $old          = $_SESSION['old'] ?? '';
@@ -130,11 +130,11 @@ require_once __DIR__ . '/fungsi.php';
         <div style="padding:10px; margin-bottom:10px; background:#f8d7da; color:#721c24; border-radius:6px;">
           <?= $flash_error; ?>
         </div>
-      <?php endif; ?>
+      <?php endif; ?>
 
       <form action="proses.php" method="POST">
 
-        <label for="txtNama"><span>Nama:</span>
+      <label for="txtNama"><span>Nama:</span>
         <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama"
          required autocomplete="name"
           value="<?= Isset($old['nama']) ? htmlspecialchars($old['nama']): '' ?>">
@@ -150,7 +150,7 @@ require_once __DIR__ . '/fungsi.php';
           <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." 
           required><?= isset($old['pesan']) ? htmlspecialchars($old['pesan']) : '' ?></textarea>
           <small id="charCount">0/200 karakter</small>
-        </label>
+        </label>
 
         <button type="submit">Kirim</button>
         <button type="reset">Batal</button>
@@ -169,4 +169,5 @@ require_once __DIR__ . '/fungsi.php';
 
   <script src="script.js"></script>
 </body>
+
 </html>
