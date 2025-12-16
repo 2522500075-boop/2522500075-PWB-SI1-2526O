@@ -115,7 +115,7 @@ require_once __DIR__ . '/fungsi.php';
    $old          = $_SESSION['old'] ?? '';
 
    unset($_SESSION['flash_sukses'], $_SESSION['flash_error'], $_SESSION['old']);
-   ?>
+   ?>
 
     <section id="contact">
       <h2>Kontak Kami</h2>
@@ -130,25 +130,20 @@ require_once __DIR__ . '/fungsi.php';
         <div style="padding:10px; margin-bottom:10px; background:#f8d7da; color:#721c24; border-radius:6px;">
           <?= $flash_error; ?>
         </div>
-      <?php endif; ?>
+      <?php endif; ?>
 
       <form action="proses.php" method="POST">
 
         <label for="txtNama"><span>Nama:</span>
-        <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama"
-         required autocomplete="name"
-          value="<?= Isset($old['nama']) ? htmlspecialchars($old['nama']): '' ?>">
-      </label>
+          <input type="text" id="txtNama" name="txtNama" placeholder="Masukkan nama" required autocomplete="name">
+        </label>
 
-    <label for="txtEmail"><span>Email:</span>
-      <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email"
-        required autocomplete="email"
-         value="<?= isset($old['email']) ? htmlspecialchars($old['email']) : '' ?>">
-         </label>
+        <label for="txtEmail"><span>Email:</span>
+          <input type="email" id="txtEmail" name="txtEmail" placeholder="Masukkan email" required autocomplete="email">
+        </label>
 
         <label for="txtPesan"><span>Pesan Anda:</span>
-          <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." 
-          required><?= isset($old['pesan']) ? htmlspecialchars($old['pesan']) : '' ?></textarea>
+          <textarea id="txtPesan" name="txtPesan" rows="4" placeholder="Tulis pesan anda..." required></textarea>
           <small id="charCount">0/200 karakter</small>
         </label>
 
