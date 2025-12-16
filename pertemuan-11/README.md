@@ -17,3 +17,4 @@ hari ini jumat 5 desember 2025
     <li>mengubah data label txt nama email pesan</li>
     <li>menambahkan cek request method</li>
     <li>mengganti data $ post trim</li>
+    <li>menambahkan validasi</li>
