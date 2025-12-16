@@ -15,3 +15,4 @@ hari ini jumat 5 desember 2025
     <li>menambah penangkap sukses atau gagal di index.php</li>
     <li>menampilkan flash message </li>
     <li>mengubah data label txt nama email pesan</li>
+    <li>menambahkan cek request method</li>
