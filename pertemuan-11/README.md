@@ -14,7 +14,7 @@ hari ini jumat 5 desember 2025
     <li>mengupdate file fungsi.php</li>
     <li>menambahkan pesan sukses dan gagal di index.php</li>
     <li>menambahkan flash message di index.php</li>
-    <li></li>
+    <li>mengubah data yang ada di txtnama email pesan</li>
     <li></li>
     <li></li>
     <li></li>
