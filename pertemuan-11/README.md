@@ -13,7 +13,7 @@ hari ini jumat 5 desember 2025
     <li>menambahkan localhost ke pertemuan -10</li>
     <li>mengupdate file fungsi.php</li>
     <li>menambahkan pesan sukses dan gagal di index.php</li>
-    <li></li>
+    <li>menambahkan flash message di index.php</li>
     <li></li>
     <li></li>
     <li></li>
