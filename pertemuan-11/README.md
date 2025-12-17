@@ -12,7 +12,7 @@ hari ini jumat 5 desember 2025
     <li>menghapus code dari baris 133 - 141 di index.php</li>
     <li>menambahkan localhost ke pertemuan -10</li>
     <li>mengupdate file fungsi.php</li>
-    <li></li>
+    <li>menambahkan pesan sukses dan gagal di index.php</li>
     <li></li>
     <li></li>
     <li></li>
