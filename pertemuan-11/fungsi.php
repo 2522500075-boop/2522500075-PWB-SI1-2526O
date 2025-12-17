@@ -4,9 +4,12 @@ function redirect_ke($url)
   header("Location:" . $url);
   exit;
 }
-  return htmlspecialchars(trim($str));
-}
 
+function bersihkan($str)
+{ 
+   return htmlspecialchars(trim($str));
+}
+ 
 function tidakKosong($str)
 {
   return strlen(trim($str)) > 0;
