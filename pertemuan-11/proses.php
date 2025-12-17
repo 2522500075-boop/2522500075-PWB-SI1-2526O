@@ -15,7 +15,11 @@ $pesan = bersihkan($_POST['txtPesan'] ?? '');
 $captcha = bersihkan($_POST["captcah"] ??'');
 $errors = [];
 
-
+if ($captcha === "") {
+    $errors[] = "Captcha harus diisi!";
+} elseif ($captcha != 5) {
+    $errors[] = "Jawaban captcha salah!";
+}
 
 if ($nama === '') {
     $errors[] = 'Nama wajib diisi.';
