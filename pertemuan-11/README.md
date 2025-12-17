@@ -21,4 +21,4 @@ hari ini jumat 5 desember 2025
     <li>menambahkan prepared statement mysqli</li>
     <li>menambahkan tabel no di read php</li>
     <li>menambahkan captcha 2+3 di index.php</li>
-    <li></li>
+    <li>menambahkan kolok created</li>
