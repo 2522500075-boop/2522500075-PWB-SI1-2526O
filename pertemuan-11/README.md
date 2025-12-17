@@ -19,6 +19,6 @@ hari ini jumat 5 desember 2025
     <li>menggantikan data post trim htmlspecialchars</li>
     <li>menambahkan validasi</li>
     <li>menambahkan prepared statement mysqli</li>
-    <li></li>
+    <li>menambahkan tabel no di read php</li>
     <li></li>
     <li></li>
