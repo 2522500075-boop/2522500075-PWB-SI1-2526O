@@ -23,3 +23,4 @@ hari ini jumat 5 desember 2025
     <li>menambahkan captcha 2+3 di index.php</li>
     <li>menambahkan kolok created</li>
     <li>menambahkan field tabel tbl_tamu</li>
+    <li>upgrade localhost</li>
