@@ -17,7 +17,7 @@ hari ini jumat 5 desember 2025
     <li>mengubah data yang ada di txtnama email pesan</li>
     <li>menambahkan request method di proses.php</li>
     <li>menggantikan data post trim htmlspecialchars</li>
-    <li></li>
+    <li>menambahkan validasi</li>
     <li></li>
     <li></li>
     <li></li>
