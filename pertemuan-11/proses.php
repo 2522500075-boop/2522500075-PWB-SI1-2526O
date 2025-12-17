@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 $nama  = bersihkan($_POST['txtNama'] ?? '');
 $email = bersihkan($_POST['txtEmail'] ?? '');
 $pesan = bersihkan($_POST['txtPesan'] ?? '');
+$captcha = bersihkan($_POST["captcah"] ??'');
 $errors = [];
 
 if ($nama === '') {
