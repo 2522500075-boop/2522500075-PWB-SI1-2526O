@@ -11,11 +11,14 @@ hari ini jumat 5 desember 2025
     <li>mengganti code di bagian 146 di index.php</li>
     <li>menghapus code dari baris 133 - 141 di index.php</li>
     <li>menambahkan localhost ke pertemuan -10</li>
-    <li>menambahkan fungsi php</li>
-    <li>menambah penangkap sukses atau gagal di index.php</li>
-    <li>menampilkan flash message </li>
-    <li>mengubah data label txt nama email pesan</li>
-    <li>menambahkan cek request method</li>
-    <li>mengganti data $ post trim</li>
-    <li>menambahkan validasi</li>
-    <li>memperbarui statemen pesan sukses atau gagal</li>
+    <li>mengupdate file fungsi.php</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>

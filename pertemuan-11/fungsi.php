@@ -1,9 +1,12 @@
 <?php
 function redirect_ke($url)
 {
-  header("Location: " . $url);
-  exit();
+  header("Location:" . $url);
+  exit;
 }
+  return htmlspecialchars(trim($str));
+}
+
 function tidakKosong($str)
 {
   return strlen(trim($str)) > 0;
