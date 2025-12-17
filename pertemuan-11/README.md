@@ -15,7 +15,7 @@ hari ini jumat 5 desember 2025
     <li>menambahkan pesan sukses dan gagal di index.php</li>
     <li>menambahkan flash message di index.php</li>
     <li>mengubah data yang ada di txtnama email pesan</li>
-    <li></li>
+    <li>menambahkan request method di proses.php</li>
     <li></li>
     <li></li>
     <li></li>
