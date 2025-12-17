@@ -16,7 +16,7 @@ hari ini jumat 5 desember 2025
     <li>menambahkan flash message di index.php</li>
     <li>mengubah data yang ada di txtnama email pesan</li>
     <li>menambahkan request method di proses.php</li>
-    <li></li>
+    <li>menggantikan data post trim htmlspecialchars</li>
     <li></li>
     <li></li>
     <li></li>
