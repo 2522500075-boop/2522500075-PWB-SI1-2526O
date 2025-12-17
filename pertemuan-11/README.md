@@ -18,7 +18,7 @@ hari ini jumat 5 desember 2025
     <li>menambahkan request method di proses.php</li>
     <li>menggantikan data post trim htmlspecialchars</li>
     <li>menambahkan validasi</li>
-    <li></li>
+    <li>menambahkan prepared statement mysqli</li>
     <li></li>
     <li></li>
     <li></li>
