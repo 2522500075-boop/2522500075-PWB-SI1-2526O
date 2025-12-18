@@ -21,7 +21,7 @@ $no = 1;
 <tr>
 
 <td><?= $i++; ?></td>
-<td><?= $row['cid']; ?></td>
+<td><a href="edit.php?cid=<?= (int)$row['cid']; ?>">Edit</a></td>
 <td><?= $row['cid']; ?></td>
 <td><?= htmlspecialchars($row['cnama']); ?></td>
 <td><?= htmlspecialchars($row['cemail']); ?></td>
