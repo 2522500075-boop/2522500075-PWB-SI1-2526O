@@ -49,7 +49,7 @@ unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
             <td><?= $i++; ?></td>
             <td>
                 <a href="edit.php?cid=<?= (int)$row['cid']; ?>">Edit</a>
-                <a href="proses_delete.php">delete</a>    
+                <a   <a onclick="return confirm('Yakin nek ngapus <?= htmlspecialchars($row['cnama']); ?> dengan pesan <?= htmlspecialchars($row['cpesan']); ?>?');" href="proses_delete.php?cid=<?=(int)$row['cid'];?>">delete</a>    
             </td>
 
             <td><?= $row['cid']; ?></td>

@@ -5,3 +5,5 @@ hari ini jumat 10 januari 2026
 <br>Nama: Khairaan Yamani</br>
 <ol>
     <li>menghapus localhost</li>
+    <li>menghapus dan menyesuaikan proses delete</li>
+    <li>membuat kode delete proses</li>
