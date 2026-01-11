@@ -7,3 +7,4 @@ Deskripsi pertemuan...
     <LI>mengcopy aitem</li>
     <li>membuat file read_biodata.php dan mengcopy item</li> 
     <li>menambah code di file baru</li>
+    <li>membuat file baru</li>
