@@ -12,3 +12,4 @@ Deskripsi pertemuan...
     <li>meng copi ke proses_biodata.php</li>
     <li>mengubah kode untuk proses biodata</li>
     <li>mengedit code di file index.php</li>
+    <li>mengedit file kode edit biodata php</li>
