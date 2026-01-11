@@ -3,16 +3,16 @@ require 'koneksi.php';
 require_ONCE 'fungsi.php';
 
 $fieldContact = [
-    "nim" => ["label" => "Nama:", "suffix" => ""],
-    "nama" => ["label" => "Email:", "suffix" => ""],
-    "tempat" => ["label" => "Pesan Anda:", "suffix" => ""]
-    "tanggal" => ["label" => "Pesan Anda:", "suffix" => ""]
-    "hobi" => ["label" => "Pesan Anda:", "suffix" => ""]
-    "pasangan" => ["label" => "Pesan Anda:", "suffix" => ""]
-    "pekerjaan" => ["label" => "Pesan Anda:", "suffix" => ""]
-    "ortu" => ["label" => "Pesan Anda:", "suffix" => ""]
-    "kakak" => ["label" => "Pesan Anda:", "suffix" => ""]
-    "adik" => ["label" => "Pesan Anda:", "suffix" => ""]
+    "nim" => ["label" => "NIM:", "suffix" => ""],
+    "nama" => ["label" => "nama:", "suffix" => ""],
+    "tempat" => ["label" => "tempat lahir:", "suffix" => ""]
+    "tanggal" => ["label" => "tanggal lahir:", "suffix" => ""]
+    "hobi" => ["label" => "hobi:", "suffix" => ""]
+    "pasangan" => ["label" => "pasangan:", "suffix" => ""]
+    "pekerjaan" => ["label" => "Pekerjaan:", "suffix" => ""]
+    "ortu" => ["label" => "nama orang tua:", "suffix" => ""]
+    "kakak" => ["label" => "nama kaka:", "suffix" => ""]
+    "adik" => ["label" => "nama adik:", "suffix" => ""]
 ];
 
 $sql = "SELECT * FROM tbl_tamu ORDER BY cid DESC";
