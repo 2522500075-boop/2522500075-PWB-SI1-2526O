@@ -5,3 +5,4 @@ Deskripsi pertemuan...
 <ol>
     <li>membuat table biodata</li>
     <LI>mengcopy aitem</li>
+    <li>membuat file read_biodata.php dan mengcopy item</li> 
