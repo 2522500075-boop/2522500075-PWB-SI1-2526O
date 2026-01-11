@@ -8,3 +8,4 @@ Deskripsi pertemuan...
     <li>membuat file read_biodata.php dan mengcopy item</li> 
     <li>menambah code di file baru</li>
     <li>membuat file baru</li>
+    <li>menambah code di read_inc.biodata</li>
