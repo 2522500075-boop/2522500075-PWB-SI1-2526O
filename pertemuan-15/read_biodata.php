@@ -3,7 +3,7 @@ session_start();
 require 'koneksi.php';
 require 'fungsi.php';
 
-$sql = "SELECT * FROM tbl_tamu ORDER BY cid DESC";
+$sql = "SELECT * FROM tbl_mahasiswa_amik ORDER BY cid DESC";
 $q = mysqli_query($conn, $sql);
 if (!$q) {
     die("Query error:" . mysqli_error($conn));
@@ -53,9 +53,16 @@ unset($_SESSION['flash_sukses'], $_SESSION['flash_error']);
             </td>
 
             <td><?= $row['cid']; ?></td>
-            <td><?= htmlspecialchars($row['cnama']); ?></td>
-            <td><?= htmlspecialchars($row['cemail']); ?></td>
-            <td><?= nl2br(htmlspecialchars($row['cpesan'])); ?></td>
+            <td><?= htmlspecialchars($row['cnim']); ?></td>
+            <td><?= htmlspecialchars($row['cnama_lengkap']); ?></td>
+            <td><?= htmlspecialchars($row['ctempat_lahii']); ?></td>
+            <td><?= htmlspecialchars($row['ctanggal_lahir']); ?></td>
+            <td><?= htmlspecialchars($row['chobi']); ?></td>
+            <td><?= htmlspecialchars($row['cpasangan']); ?></td>
+            <td><?= htmlspecialchars($row['cpekerjaan']); ?></td>
+            <td><?= htmlspecialchars($row['cnama_orang_tua']); ?></td>
+            <td><?= htmlspecialchars($row['cnama_kaka']); ?></td>
+            <td><?= htmlspecialchars($row['cnama_adik']); ?></td>
             <td><?= htmlspecialchars($row['dcreated_at']); ?></td>
         </tr>
     <?php endwhile; ?>
