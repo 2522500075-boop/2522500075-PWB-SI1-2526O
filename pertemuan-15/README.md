@@ -9,3 +9,4 @@ Deskripsi pertemuan...
     <li>menambah code di file baru</li>
     <li>membuat file baru</li>
     <li>menambah code di read_inc.biodata</li>
+    <li>meng copi ke proses_biodata.php</li>
