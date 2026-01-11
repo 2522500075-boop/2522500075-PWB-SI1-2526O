@@ -13,3 +13,4 @@ Deskripsi pertemuan...
     <li>mengubah kode untuk proses biodata</li>
     <li>mengedit code di file index.php</li>
     <li>mengedit file kode edit biodata php</li>
+    <li>menambahkan file baru proses delet biodata php</li>
