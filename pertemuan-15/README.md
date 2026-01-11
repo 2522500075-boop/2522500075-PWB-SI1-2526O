@@ -4,3 +4,4 @@ Deskripsi pertemuan...
 <br>Nama: Khairaan Yamani</br>
 <ol>
     <li>membuat table biodata</li>
+    <LI>mengcopy aitem</li>
