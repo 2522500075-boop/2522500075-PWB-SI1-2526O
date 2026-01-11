@@ -11,3 +11,4 @@ Deskripsi pertemuan...
     <li>menambah code di read_inc.biodata</li>
     <li>meng copi ke proses_biodata.php</li>
     <li>mengubah kode untuk proses biodata</li>
+    <li>mengedit code di file index.php</li>
