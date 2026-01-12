@@ -1,23 +1,23 @@
 <?php
-session_start();
+require __DIR__ . '/koneksi.php';
+require_once __DIR__ . '/fungsi.php';
 
-require 'fungsi.php';
-require 'koneksi.php';
-
-if ($_SERVER['REQUEST_METHOD'] != 'POST') {
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
     redirect_ke('index.php#biodata');
 }
-$nim = bersihkan($_POST['txtNIM'] ?? '');
-$nama = bersihkan($_POST['txtNMlengkap'] ?? '');
-$tempat = bersihkan($_POST['txtT4lhr'] ?? '');
-$tanggal = bersihkan($_POST["txtTgLlhr"] ?? '');
-$hobi = bersihkan($_POST["txtHobi"] ?? '');
-$pasangan = bersihkan($_POST["txtPasangan"] ?? '');
-$pekerjaan = bersihkan($_POST["txtKerja"] ?? '');
-$ortu = bersihkan($_POST["txtNMOrtu"] ?? '');
-$kakak = bersihkan($_POST["txtNMKakak"] ?? '');
-$adik = bersihkan($_POST["txtNMAdik"] ?? '');
+
+$nim        = bersihkan($_POST['txtNim'] ?? '');
+$nama       = bersihkan($_POST['txtNmLengkap'] ?? '');
+$tempat     = bersihkan($_POST['txtT4Lhr'] ?? '');
+$tanggal    = bersihkan($_POST['txtTglLhr'] ?? '');
+$hobi       = bersihkan($_POST['txtHobi'] ?? '');
+$pasangan   = bersihkan($_POST['txtPasangan'] ?? '');
+$pekerjaan  = bersihkan($_POST['txtKerja'] ?? '');
+$ortu       = bersihkan($_POST['txtNmOrtu'] ?? '');
+$kaka      = bersihkan($_POST['txtNmKaka'] ?? '');
+$adik       = bersihkan($_POST['txtNmAdik'] ?? '');
+
 
 $errors = [];
 
@@ -28,31 +28,63 @@ if ($tanggal === '')    { $errors[] = 'Tanggal lahir wajib diisi.'; }
 if ($hobi === '')       { $errors[] = 'Hobi wajib diisi.'; }
 if ($pekerjaan === '')  { $errors[] = 'Pekerjaan wajib diisi.'; }
 if ($ortu === '')       { $errors[] = 'Nama orang tua wajib diisi.'; }
-if ($kakak === '')       { $errors[] = 'Nama kakak wajib diisi.'; }
-if ($adik === '')       { $errors[] = 'Nama adik wajib diisi.'; }
 
 if (mb_strlen($nim) < 5)  { $errors[] = 'NIM minimal 5 karakter.'; }
 if (mb_strlen($nama) < 3) { $errors[] = 'Nama minimal 3 karakter.'; }
+
 if (!empty($errors)) {
-   
+    $_SESSION['old_biodata'] = [
+        'nim'        => $nim,
+        'nama'       => $nama,
+        'tempat'     => $tempat,
+        'tanggal'    => $tanggal,
+        'hobi'       => $hobi,
+        'pasangan'   => $pasangan,
+        'pekerjaan'  => $pekerjaan,
+        'ortu'       => $ortu,
+        'kaka'      => $kaka,
+        'adik'       => $adik,
+    ];
+
     $_SESSION['flash_error'] = implode('<br>', $errors);
     redirect_ke('index.php#biodata');
 }
 
-$sql = "INSERT INTO tbl_biodata_amik (cnim, cnama_lengkap, ctempat_lahir, ctanggal_lahir, chobi, cpasangan, cpekerjaan, cnama_orang_tua, cnama_kaka, cnama_adik) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?,)";
+
+$sql = "INSERT INTO tbl_mahasiswa_amik
+        (cnim, cnama_lengkap, ctempat_lahir, ctanggal_lahir, chobi,
+ cpasangan, cpekerjaan, cnama_orang_tua, cnama_kaka, cnama_adik)
+        VALUES (?,?,?,?,?,?,?,?,?,?)";
+
 $stmt = mysqli_prepare($conn, $sql);
+
 if (!$stmt) {
-    $_SESSION['flash_error'] = 'Terjadi kesalahan sistem (prepare gagal).';
-    redirect_ke('index.php#bibodata');
+    $_SESSION['flash_error'] = 'Kesalahan sistem (prepare gagal).';
+    redirect_ke('index.php#biodata');
 }
-mysqli_stmt_bind_param($stmt, "ssssssssss", $nim, $nama, $tempat, $tanggal, $hobi, $pasangan, $pekerjaan, $ortu, $kakak, $adik);
+
+mysqli_stmt_bind_param(
+    $stmt,
+    "ssssssssss",
+    $nim,
+    $nama,
+    $tempat,
+    $tanggal,
+    $hobi,
+    $pasangan,
+    $pekerjaan,
+    $ortu,
+    $kaka,
+    $adik
+);
+
+
 if (mysqli_stmt_execute($stmt)) {
     unset($_SESSION['old_biodata']);
-    $_SESSION['flash_sukses'] = 'Terima kasih, data Anda sudah tersimpan.';
-    redirect_ke('index.php#biodata');
+    $_SESSION['flash_sukses'] = 'Biodata berhasil disimpan.';
 } else {
-    
-    $_SESSION['flash_error'] = 'Data gagal disimpan. Silakan coba lagi.';
-    redirect_ke('index.php#contact');
+    $_SESSION['flash_error'] = 'Data gagal disimpan.' . mysqli_stmt_error($stmt);
 }
+
 mysqli_stmt_close($stmt);
+redirect_ke('index.php#biodata');

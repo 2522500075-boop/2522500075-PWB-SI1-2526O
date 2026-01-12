@@ -1,7 +1,6 @@
 <?php
-  session_start();
-  require 'koneksi.php';
-  require 'fungsi.php';
+  require_once 'koneksi.php';
+  require_once 'fungsi.php';
 
   /*
     Ambil nilai cid dari GET dan lakukan validasi untuk 
@@ -31,16 +30,16 @@
   */
   if (!$cid) {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
-    redirect_ke('read_biodata.php');
+    redirect_ke('bacabiodata.php');
   }
 
   /*
     Ambil data lama dari DB menggunakan prepared statement, 
     jika ada kesalahan, tampilkan penanda error.
   */
-  $stmt = mysqli_prepare($conn, "SELECT cid, cnim,	cnama_lengkap,	ctempat_lahir,	ctanggal_lahir,	chobi,	cpasangan,
-	cpekerjaan,	cnamaorangtua,	cnama_kakak,	cnama_adik
-                                    FROM tbl_biodata_mahasiswa_sederhana WHERE cid = ? LIMIT 1");
+  $stmt = mysqli_prepare($conn, "SELECT cid, cnim, cnama_lengkap, ctempat_lahir, ctanggal_lahir, chobi,
+ cpasangan, cpekerjaan, cnama_orang_tua, cnama_kakak, cnama_adik
+ FROM tbl_biodata_mahasiswa_sederhana WHERE cid = ? LIMIT 1");
   if (!$stmt) {
     $_SESSION['flash_error'] = 'Query tidak benar.';
     redirect_ke('read_biodata.php');
@@ -54,7 +53,7 @@
 
   if (!$row) {
     $_SESSION['flash_error'] = 'Record tidak ditemukan.';
-    redirect_ke('read_biodata).php');
+    redirect_ke('read_biodata.php');
   }
 
   #Nilai awal (prefill form)
@@ -65,11 +64,12 @@
     $hobi = $row['chobi'] ?? '';
     $pasangan = $row['cpasangan'] ?? '';
     $pekerjaan = $row['cpekerjaan'] ?? '';
-    $nama_ortu = $row['cnamaortu'] ?? '';
-    $nama_kakak = $row['cnama_kakak'] ?? '';
+    $nama_ortu = $row['cnama_orang_tua'] ?? '';
+    $nama_kaka = $row['cnama_kaka'] ?? '';
     $nama_adik = $row['cnama_adik'] ?? '';
+
   #Ambil error dan nilai old input kalau ada
- $flash_error = $_SESSION['flash_error'] ?? '';
+  $flash_error = $_SESSION['flash_error'] ?? '';
   $old_biodata = $_SESSION['old_biodata'] ?? [];
   unset($_SESSION['flash_error'], $_SESSION['old_biodata']);
   if (!empty($old_biodata)) {
@@ -80,49 +80,42 @@
     $hobi = $old_biodata['hobi'] ?? $hobi;
     $pasangan = $old_biodata['pasangan'] ?? $pasangan;
     $pekerjaan = $old_biodata['pekerjaan'] ?? $pekerjaan;
-    $nama_ortu = $old_biodata['namaortu'] ?? $nama_ortu;
-    $nama_kakak = $old_biodata['nama_kakak'] ?? $nama_kakak;
+    $nama_ortu = $old_biodata['nama_ortu'] ?? $nama_ortu;
+    $nama_kaka = $old_biodata['nama_kaka'] ?? $nama_kakak;
     $nama_adik = $old_biodata['nama_adik'] ?? $nama_adik;
   }
 ?>
 
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Judul Halaman</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Ini Header</h1>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">
-        &#9776;
-      </button>
-      <nav>
-        <ul>
-          <li><a href="#home">Beranda</a></li>
-          <li><a href="#about">Tentang</a></li>
-          <li><a href="#contact">Kontak</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Biodata Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <main>
-      <section id="contact">
-        <h2>Edit Buku Tamu</h2>
-        <?php if (!empty($flash_error)): ?>
-          <div style="padding:10px; margin-bottom:10px; 
-            background:#f8d7da; color:#721c24; border-radius:6px;">
-            <?= $flash_error; ?>
-          </div>
-        <?php endif; ?>
-        <form action="proses_update.php" method="POST">
+<body>
+<header>
+  <h1>Ini Header</h1>
+</header>
 
-          <input type="text" name="cid" value="<?= (int)$cid; ?>">
+<main>
+<section id="biodata">
+  <h2>Edit Biodata Mahasiswa</h2>
 
-         <label>NIM:
+  <?php if (!empty($flash_error)): ?>
+    <div style="padding:10px; margin-bottom:10px;
+      background:#f8d7da; color:#721c24; border-radius:6px;">
+      <?= $flash_error; ?>
+    </div>
+  <?php endif; ?>
+
+  <form action="proses_update_biodata.php" method="POST">
+
+    <input type="hidden" name="cid" value="<?= (int)$cid; ?>">
+
+    <label>NIM:
       <input type="text" name="nim" value="<?= htmlspecialchars($nim); ?>" required>
     </label>
 
@@ -151,7 +144,7 @@
     </label>
 
     <label>Nama Orang Tua:
-      <input type="text" name="nama_ortu" value="<?= htmlspecialchars($namaortu); ?>" required>
+      <input type="text" name="nama_ortu" value="<?= htmlspecialchars($nama_ortu); ?>" required>
     </label>
 
     <label>Nama Kakak:
@@ -162,13 +155,12 @@
       <input type="text" name="nama_adik" value="<?= htmlspecialchars($nama_adik); ?>" required>
     </label>
 
-          <button type="submit">Kirim</button>
-          <button type="reset">Batal</button>
-          <a href="read_biodata.php" class="reset">Kembali</a>
-        </form>
-      </section>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
+    <button type="submit">Update</button>
+    <button type="reset">Batal</button>
+    <a href="read_biodata.php">Kembali</a>
+  </form>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
 </html>

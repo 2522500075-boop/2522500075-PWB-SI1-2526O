@@ -11,7 +11,7 @@ $fieldContact = [
     "pasangan" => ["label" => "pasangan:", "suffix" => ""]
     "pekerjaan" => ["label" => "Pekerjaan:", "suffix" => ""]
     "ortu" => ["label" => "nama orang tua:", "suffix" => ""]
-    "kakak" => ["label" => "nama kaka:", "suffix" => ""]
+    "kaka" => ["label" => "nama kaka:", "suffix" => ""]
     "adik" => ["label" => "nama adik:", "suffix" => ""]
 ];
 
@@ -32,7 +32,7 @@ if (!$q) {
             "pasangan" => $row["cpasangan"],
             "pekerjaan" => $row["cpekerjaan"],
             "ortu" => $row["cnama_orang_tua"],
-            "kakak" => $row["cnama_kaka"],
+            "kaka" => $row["cnama_kaka"],
             "adik" => $row["cnama_adik"],
         ];
         echo tampilkanBiodata($fieldContact, $arrContact);
