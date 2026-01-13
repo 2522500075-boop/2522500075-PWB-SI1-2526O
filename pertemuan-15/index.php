@@ -95,7 +95,7 @@ require_once __DIR__ . '/fungsi.php';
         </label>
 
         <label for="txtNmKakak"><span>Nama Kakak:</span>
-          <input type="text" id="txtNmKakak" name="txtNmKakak" placeholder="Masukkan Nama Kakak" required value="<?= isset($old_biodata['kakak']) ? htmlspecialchars($old_biodata['kakak']) : '' ?>">
+          <input type="text" id="txtNmKakak" name="txtNmKakak" placeholder="Masukkan Nama Kakak" required value="<?= isset($old_biodata['kaka']) ? htmlspecialchars($old_biodata['kaka']) : '' ?>">
         </label>
 
         <label for="txtNmAdik"><span>Nama Adik:</span>

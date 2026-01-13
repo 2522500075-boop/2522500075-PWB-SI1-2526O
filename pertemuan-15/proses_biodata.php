@@ -1,4 +1,5 @@
 <?php
+session_start();
 require __DIR__ . '/koneksi.php';
 require_once __DIR__ . '/fungsi.php';
 
@@ -15,7 +16,7 @@ $hobi       = bersihkan($_POST['txtHobi'] ?? '');
 $pasangan   = bersihkan($_POST['txtPasangan'] ?? '');
 $pekerjaan  = bersihkan($_POST['txtKerja'] ?? '');
 $ortu       = bersihkan($_POST['txtNmOrtu'] ?? '');
-$kaka      = bersihkan($_POST['txtNmKaka'] ?? '');
+$kaka      = bersihkan($_POST['txtNmKakak'] ?? '');
 $adik       = bersihkan($_POST['txtNmAdik'] ?? '');
 
 
@@ -28,6 +29,8 @@ if ($tanggal === '')    { $errors[] = 'Tanggal lahir wajib diisi.'; }
 if ($hobi === '')       { $errors[] = 'Hobi wajib diisi.'; }
 if ($pekerjaan === '')  { $errors[] = 'Pekerjaan wajib diisi.'; }
 if ($ortu === '')       { $errors[] = 'Nama orang tua wajib diisi.'; }
+if ($kaka === '')       { $errors[] = 'Nama kakak wajib diisi.'; }
+if ($adik === '')       { $errors[] = 'Nama adik wajib diisi.'; }
 
 if (mb_strlen($nim) < 5)  { $errors[] = 'NIM minimal 5 karakter.'; }
 if (mb_strlen($nama) < 3) { $errors[] = 'Nama minimal 3 karakter.'; }

@@ -1,6 +1,6 @@
 <?php
 require_once 'koneksi.php';
-require_once 'fungsi.php';
+
 
 $fieldConfig = [
     "nim" => ["label" => "NIM:", "suffix" => ""],

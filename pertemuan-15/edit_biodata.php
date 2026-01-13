@@ -1,6 +1,7 @@
 <?php
-  require_once 'koneksi.php';
-  require_once 'fungsi.php';
+  session_start();
+  require 'koneksi.php';
+  require 'fungsi.php';
 
   /*
     Ambil nilai cid dari GET dan lakukan validasi untuk 
@@ -30,7 +31,7 @@
   */
   if (!$cid) {
     $_SESSION['flash_error'] = 'Akses tidak valid.';
-    redirect_ke('bacabiodata.php');
+    redirect_ke('read_biodata.php');
   }
 
   /*
@@ -38,8 +39,8 @@
     jika ada kesalahan, tampilkan penanda error.
   */
   $stmt = mysqli_prepare($conn, "SELECT cid, cnim, cnama_lengkap, ctempat_lahir, ctanggal_lahir, chobi,
- cpasangan, cpekerjaan, cnama_orang_tua, cnama_kakak, cnama_adik
- FROM tbl_biodata_mahasiswa_sederhana WHERE cid = ? LIMIT 1");
+ cpasangan, cpekerjaan, cnama_orang_tua, cnama_kaka, cnama_adik
+ FROM tbl_mahasiswa_amik WHERE cid = ? LIMIT 1");
   if (!$stmt) {
     $_SESSION['flash_error'] = 'Query tidak benar.';
     redirect_ke('read_biodata.php');
@@ -81,7 +82,7 @@
     $pasangan = $old_biodata['pasangan'] ?? $pasangan;
     $pekerjaan = $old_biodata['pekerjaan'] ?? $pekerjaan;
     $nama_ortu = $old_biodata['nama_ortu'] ?? $nama_ortu;
-    $nama_kaka = $old_biodata['nama_kaka'] ?? $nama_kakak;
+    $nama_kaka = $old_biodata['nama_kaka'] ?? $nama_kaka;
     $nama_adik = $old_biodata['nama_adik'] ?? $nama_adik;
   }
 ?>
@@ -148,7 +149,7 @@
     </label>
 
     <label>Nama Kakak:
-      <input type="text" name="nama_kakak" value="<?= htmlspecialchars($nama_kakak); ?>" required>
+      <input type="text" name="nama_kaka" value="<?= htmlspecialchars($nama_kaka); ?>" required>
     </label>
 
     <label>Nama Adik:
