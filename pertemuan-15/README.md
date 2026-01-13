@@ -1,20 +1,17 @@
-﻿# pertemuan-15
-<br>Nim: 2522500074</br>
-<br>Nama: Engrasia Masyithah</br>
+﻿## pertemuan-15
+Deskripsi pertemuan...
+<br>Nim: 2522500075</br>
+<br>Nama: Khairaan Yamani</br>
 <ol>
-    <li>membuat table data biodata</li>
-    <li>mengcopy file ke pertemuan 15</li>
-    <li>mengcopy kode read.php ke file read_biodata.php dan membuat file baru</li>
-    <li>menambahkan kode baru sesuai yang di ketik di phpmyadmin di readbiodataphp</li>
-    <li>membuat file baru read_ind.biodata.php</li>
-    <li>menambahkan kode nim dll di read in biodata php</li>
-    <li>menambahkan file baru proses biodata php</li>
-    <li>mengubahkan kode ke file proses biodata php</li>
-    <li>mengubah kode index.php</li>
-    <li>mengedit kode file editbiodataphp</li>
-    <li>membuat file proses delete biodata php</li>
-    <li>membuat file baru proses update biodata.php</li>
-    <li>memperbaiki file yang eror</li>
-
-
-
+    <li>membuat table biodata</li>
+    <LI>mengcopy aitem</li>
+    <li>membuat file read_biodata.php dan mengcopy item</li> 
+    <li>menambah code di file baru</li>
+    <li>membuat file baru</li>
+    <li>menambah code di read_inc.biodata</li>
+    <li>meng copi ke proses_biodata.php</li>
+    <li>mengubah kode untuk proses biodata</li>
+    <li>mengedit code di file index.php</li>
+    <li>mengedit file kode edit biodata php</li>
+    <li>menambahkan file baru proses delet biodata php</li>
+    <li>menambahkan file proses update biodata php</li>
