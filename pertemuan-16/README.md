@@ -8,3 +8,4 @@
     <li>memasang kode_pengunjung di edit_pengunjung.php</li>
     <li>menambahkan doctype HTML di edit_pengunjung.php</li>
     <li>menambahkan file proses_delet_pengunjung.php</li>
+    <li>mengisi sesion_star di file proses_delete_pengunjung.php</li>
