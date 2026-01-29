@@ -92,19 +92,3 @@ if (mysqli_stmt_execute($stmt)) { #jika berhasil, kosongkan old value, beri pesa
 }
 #tutup statement
 mysqli_stmt_close($stmt);
-
-$arrAnggota = [
-  "noang" => $_POST["txtNoAng"] ?? "",
-  "nama" => $_POST["txtNmAng"] ?? "",
-  "jabatan" => $_POST["txtJabAng"] ?? "",
-  "tanggal" => $_POST["txtTglJadi"] ?? "",
-  "skill" => $_POST["txtSkill"] ?? "",
-  "gaji" => $_POST["txtGaji"] ?? "",
-  "nowa" => $_POST["txtBatalion"] ?? "",
-  "batalion" => $_POST["txBatalion"] ?? "",
-  "bb" => $_POST["txtBB"] ?? "",
-  "tb" => $_POST["txtTB"] ?? ""
-];
-$_SESSION["anggota"] = $arrAnggota;
-
-header("location: index.php#about");

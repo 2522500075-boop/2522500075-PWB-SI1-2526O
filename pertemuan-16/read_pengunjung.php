@@ -1,3 +1,18 @@
+<?php
+include 'koneksi.php'; // your DB connection
+
+// 1. Define the SQL query
+$sql = "SELECT * FROM pengunjung"; // use your actual table name
+
+// 2. Execute the query
+$q = mysqli_query($conn, $sql);
+
+// 3. Check for errors
+if (!$q) {
+    die("Query Error: " . mysqli_error($conn));
+}
+?>
+
 <table border="1" cellpadding="8" cellspacing="0">
   <tr>
     <th>No</th>

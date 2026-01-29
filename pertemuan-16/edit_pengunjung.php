@@ -54,7 +54,7 @@
     $hobi                 = $old_biodata['hobi'] ?? $hobi;
     $asal_slta            = $old_biodata['asal_slta'] ?? $asal_slta;
     $pekerjaan            = $old_biodata['pekerjaan'] ?? $pekerjaan;
-    $nama_orangtua        = $old_biodata['nama_orangtua'] ?? $nama_orang_ tua;
+    $nama_orangtua           = $old_biodata['nama_orangtua'] ?? $nama_orang_tua;
     $nama_pacar           = $old_biodata['nama_pacar'] ?? $nama_pacar;
     $nama_mantan          = $old_biodata['nama_mantan'] ?? $nama_mantan;
   }
