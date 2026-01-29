@@ -14,3 +14,4 @@
     <li>menambahkan file baru proses_pengunjung.php </li>
     <li>menambahkan session_start di file proses_pengunjung.php</li>
     <li>membuat  biodata di  proses_pengunjung.php</li>
+    <li>membuat file baru proses_update_pengunjung.php</li>
