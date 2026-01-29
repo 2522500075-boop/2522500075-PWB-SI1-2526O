@@ -17,3 +17,4 @@
     <li>membuat file baru proses_update_pengunjung.php</li>
     <li>menambahkan biodata di proses_update_penunjung.php</li>
     <li>menyusun biodata berserta kode </li>
+    <li>membuat file baru read_pengunjung.php</li>
