@@ -12,3 +12,4 @@
     <li>menampilkan flash_sukses di proses_delete_pengunjung.php</li>
     <li>menampilkan flash_eror di proses_delete_pengunjung.php</li>
     <li>menambahkan file baru proses_pengunjung.php </li>
+    <li>menambahkan session_start di file proses_pengunjung.php</li>
