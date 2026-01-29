@@ -6,3 +6,4 @@
     <LI>menambahkan file baru edit_pengunjung.php</LI>
     <li>meambahkan filter input di edit_pengunjung.php</li>
     <li>memasang kode_pengunjung di edit_pengunjung.php</li>
+    <li>menambahkan doctype HTML di edit_pengunjung.php</li>
