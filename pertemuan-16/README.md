@@ -20,3 +20,4 @@
     <li>membuat file baru read_pengunjung.php</li>
     <li>menyusun biodata di read_pengunjung.php</li>
     <li>membuat table border</li>
+    <li>menambahkan file baru read_pengunjung_inc.php</li>
