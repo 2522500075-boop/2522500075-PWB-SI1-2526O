@@ -2,7 +2,7 @@
 session_start();
 require_once __DIR__ . '/fungsi.php';
 ?>
-
+ 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,75 +38,107 @@ require_once __DIR__ . '/fungsi.php';
       <p>Ini contoh paragraf HTML.</p>
     </section>
 
-    <section id="anggota">
-      <h2>Data Anggota</h2>
-      <form action="proses_anggota.php" method="POST">
+   <?php
+    $flash_sukses = $_SESSION['flash_sukses'] ?? ''; #jika query sukses
+    $flash_error  = $_SESSION['flash_error'] ?? ''; #jika ada error
+    $old_biodata          = $_SESSION['old_biodata'] ?? []; #untuk nilai lama form
 
-        <label for="txtNoAng"><span>Nomor Anggota:</span>
-          <input type="text" id="txtNoAng" name="txtNoAng" placeholder="Masukkan Nomor Anggota" required>
-        </label>
-
-        <label for="txtNmAng"><span>Nama Anggota:</span>
-          <input type="text" id="txtNmAng" name="txtNmAng" placeholder="Masukkan Nama Anggota" required>
-        </label>
-
-        <label for="txtJabAng"><span>Jabatan Anggota:</span>
-          <input type="text" id="txtJabAng" name="txtJabAng" placeholder="Masukkan Jabatan Anggota" required>
-        </label>
-
-        <label for="txtTglJadi"><span>Tanggal Jadi Anggota:</span>
-          <input type="text" id="txtTglJadi" name="txtTglJadi" placeholder="Masukkan Tanggal Jadi Anggota" required>
-        </label>
-
-        <label for="txtSkill"><span>Kemampuan Anggota:</span>
-          <input type="text" id="txtSkill" name="txtSkill" placeholder="Masukkan Kemampuan Anggota" required>
-        </label>
-
-        <label for="txtGaji"><span>Gaji Anggota:</span>
-          <input type="text" id="txtGaji" name="txtGaji" placeholder="Masukkan Gaji Anggota" required>
-        </label>
-
-        <label for="txtNoWA"><span>Nomor WA:</span>
-          <input type="text" id="txtNoWA" name="txtNoWA" placeholder="Masukkan Nomor WA" required>
-        </label>
-
-        <label for="txBatalion"><span>Batalion Anggota:</span>
-          <input type="text" id="txBatalion" name="txBatalion" placeholder="Masukkan Batalion Anggota" required>
-        </label>
-
-        <label for="txtBB"><span>Berat Badan:</span>
-          <input type="text" id="txtBB" name="txtBB" placeholder="Masukkan Berat Badan" required>
-        </label>
-
-        <label for="txtTB"><span>Tinggi Badan:</span>
-          <input type="text" id="txtTB" name="txtTB" placeholder="Masukkan Tinggi Badan" required>
-        </label>
-
-        <button type="submit">Kirim</button>
-        <button type="reset">Batal</button>
-      </form>
-    </section>
-
-    <?php
-    $anggota = $_SESSION["anggota"] ?? [];
-
-    $fieldConfig = [
-      "noang" => ["label" => "Nomor Anggota:", "suffix" => ""],
-      "nama" => ["label" => "Nama Anggota:", "suffix" => " &#128526;"],
-      "jabatan" => ["label" => "Jabatan Anggota:", "suffix" => ""],
-      "tanggal" => ["label" => "Tanggal Jadi Anggota:", "suffix" => ""],
-      "skill" => ["label" => "Kemampuan Anggota:", "suffix" => " &#127926;"],
-      "gaji" => ["label" => "Gaji Anggota:", "suffix" => " &hearts;"],
-      "nowa" => ["label" => "Nomor WA:", "suffix" => " &copy; 2025"],
-      "batalion" => ["label" => "Batalion Anggota:", "suffix" => ""],
-      "bb" => ["label" => "Berat Badan:", "suffix" => ""],
-      "tb" => ["label" => "Tinggi Badan:", "suffix" => ""],
-    ];
+    unset($_SESSION['flash_sukses'], $_SESSION['flash_error'], $_SESSION['old_biodata']); #bersihkan 3 session ini
     ?>
+ <section id="biodata">
+  <h2>Biodata Pengunjung</h2>
+  <?php if (!empty($flash_sukses)): ?>
+        <div style="padding:10px; margin-bottom:10px; background:#d4edda; color:#155724; border-radius:6px;">
+          <?= $flash_sukses; ?>
+        </div>
+      <?php endif; ?>
+
+      <?php if (!empty($flash_error)): ?>
+        <div style="padding:10px; margin-bottom:10px; background:#f8d7da; color:#721c24; border-radius:6px;">
+          <?= $flash_error; ?>
+        </div>
+      <?php endif; ?>
+  <form action="proses_pengunjung.php" method="POST">
+
+    <label for="txtKodePen"><span>Kode Pengunjung:</span>
+      <input type="text" id="txtKodePen" name="txtkdPengunjung"
+        placeholder="masukkan kode pengunjung"
+        required
+        value="<?= htmlspecialchars($old_biodata['kode'] ?? '') ?>">
+    </label>
+
+    <label for="txtnmPengunjung"><span>Nama Pengunjung:</span>
+      <input type="text" id="txtnmPengunjung" name="txtnmPengunjung"
+        placeholder="Nama lengkap pengunjung"
+        required
+        value="<?= htmlspecialchars($old_biodata['nama'] ?? '') ?>">
+    </label>
+
+    <label for="txtalmtrumah"><span>Alamat Rumah:</span>
+      <input type="text" id="txtalmtrumah" name="txtalmtrumah"
+        placeholder="Alamat rumah lengkap"
+        required
+        value="<?= htmlspecialchars($old_biodata['alamat'] ?? '') ?>">
+    </label>
+
+    <label for="txttglkunjungan"><span>Tanggal Kunjungan:</span>
+      <input type="text" id="txttglkunjungan" name="txttglkunjungan"
+      placeholder="masukkan tanggal"
+        required
+        value="<?= htmlspecialchars($old_biodata['tanggal'] ?? '') ?>">
+    </label>
+
+    <label for="txtHobi"><span>Hobi:</span>
+      <input type="text" id="txtHobi" name="txtHobi"
+        placeholder="Contoh: Membaca, Musik"
+        required
+        value="<?= htmlspecialchars($old_biodata['hobi'] ?? '') ?>">
+    </label>
+
+    <label for="txtAsalslta"><span>Asal SLTA:</span>
+      <input type="text" id="txtAsalslta" name="txtAsalslta"
+        placeholder="Nama SMA / SMK asal"
+        required
+        value="<?= htmlspecialchars($old_biodata['asal'] ?? '') ?>">
+    </label>
+
+    <label for="txtPekerjaan"><span>Pekerjaan:</span>
+      <input type="text" id="txtPekerjaan" name="txtPekerjaan"
+        placeholder="Pekerjaan saat ini"
+        required
+        value="<?= htmlspecialchars($old_biodata['pekerjaan'] ?? '') ?>">
+    </label>
+
+    <label for="txtNmOrtu"><span>Nama Orang Tua:</span>
+      <input type="text" id="txtNmOrtu" name="txtNmOrtu"
+        placeholder="Nama ayah / ibu"
+        required
+        value="<?= htmlspecialchars($old_biodata['ortu'] ?? '') ?>">
+    </label>
+
+    <label for="txtNmpacar"><span>Nama Pacar:</span>
+      <input type="text" id="txtNmpacar" name="txtNmpacar"
+        placeholder="Kosongkan jika tidak ada"
+        required
+        value="<?= htmlspecialchars($old_biodata['pacar'] ?? '') ?>">
+    </label>
+
+    <label for="txtNmmmantan"><span>Nama Mantan:</span>
+      <input type="text" id="txtNmmmantan" name="txtNmmmantan"
+        placeholder="Mantan terakhir 😅"
+        required
+        value="<?= htmlspecialchars($old_biodata['mantan'] ?? '') ?>">
+    </label>
+
+    <button type="submit">Kirim</button>
+    <button type="reset">Batal</button>
+
+  </form>
+</section>
 
     <section id="about">
       <h2>Tentang Saya</h2>
-      <?= tampilkanData($fieldConfig, $anggota) ?>
+      <?php include 'read_pengunjung_inc.php'?>
     </section>
 
     <?php
