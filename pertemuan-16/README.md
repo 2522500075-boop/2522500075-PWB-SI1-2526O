@@ -22,3 +22,4 @@
     <li>membuat table border</li>
     <li>menambahkan file baru read_pengunjung_inc.php</li>
     <li>menambahkan kodepen </li>
+    <li>mengeksport local host</li>
